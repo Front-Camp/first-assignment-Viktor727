@@ -7,7 +7,21 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
-};
+   for (let j =0;j<max.length;j++){
+     for(var i =0;i<numbers.length - j;i++){
+       var stakan;
+       if(max[i] == Infinity){continue;}
+       if(max[i] > max[i + 1]){
+         stakan = max[i];
+         max[i] = max[i + 1];
+         max[i + 1] = stakan;
+       }
+     }
+   }
+  return max.length - 1;
+  }
+ 
+ 
+
 
 export default max;

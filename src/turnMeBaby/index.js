@@ -8,7 +8,11 @@
  * turnMeBaby('Some text'); // 'txet emoS'
  */
 const turnMeBaby = str => {
-  /* your logic here...*/
+  var string1 = '';
+  for(var i = str.length - 1; i >= 0; i--){
+    string1 += strCharAt(i);
+  }
+  return string1;
 };
 
 export default turnMeBaby;
